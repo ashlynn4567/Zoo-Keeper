@@ -41,13 +41,28 @@ function filterByQuery(query, animalsArray) {
     return filteredResults;
 };
 
-// add route for json data
+function findById(id, animalsArray) {
+    const result = animalsArray.filter(animal => animal.id === id) [0];
+    return result;
+};
+
+// add route for basic json data
 app.get("/api/animals", (req, res) => {
     let results = animals;
     if (req.query) {
         results = filterByQuery(req.query, results);
     };
     res.json(animals);
+});
+
+// add route for animal id json data
+app.get("/api/animals/:id", (req, res) => {
+    const result = findById(req.params.id, animals);
+    if (result) {
+        res.json(result);
+    } else {
+        res.send(404);
+    };
 });
 
 // tell the server to listen for requests in port 3001
