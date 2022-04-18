@@ -1,8 +1,5 @@
-// import express into project so we can use express framework
 const express = require("express");
-// import json data about animals
 const { animals } = require("./data/animals");
-
 
 const PORT = process.env.PORT || 3001;
 // instantiate the server
@@ -33,7 +30,7 @@ function filterByQuery(query, animalsArray) {
         filteredResults = filteredResults.filter(animal => animal.diet === query.diet);
     };
     if (query.species) {
-        filteredResults = filteredResults.filter(animal => animal.diet === query.diet);
+        filteredResults = filteredResults.filter(animal => animal.species === query.species);
     };
     if (query.name) {
         filteredResults = filteredResults.filter(animal => animal.name === query.name);
@@ -66,6 +63,6 @@ app.get("/api/animals/:id", (req, res) => {
 });
 
 // tell the server to listen for requests in port 3001
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
