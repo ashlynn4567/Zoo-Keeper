@@ -11,6 +11,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 //parse incoming JSON data
 app.use(express.json());
+// add middleware to help attach our front end files to back end
+app.use(express.static("public"));
 
 // setting up queries for which users can request data using specific search parameters
 function filterByQuery(query, animalsArray) {
@@ -109,6 +111,10 @@ app.post("/api/animals", (req, res) => {
         const animal = createNewAnimal(req.body, animals);
         res.json(animal);
     };
+});
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 // tell the server to listen for requests in port 3001
