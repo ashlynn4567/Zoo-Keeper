@@ -1,7 +1,8 @@
 // importing dependencies
 const { router } = require("express").Router();
-const { filterByQuery, findById, createNewAnimal, validateAnimal } = require("../../lib/animals");
 const { animals } = require("../../data/animals.json");
+const { filterByQuery, findById, createNewAnimal, validateAnimal } = require("../../lib/animals");
+
 
 // add route for basic json data
 router.get("/animals", (req, res) => {
