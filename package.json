@@ -1,5 +1,22 @@
 {
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "022.zoo-keepr",
+  "description": "This is my eighth project for the University of Oregon Coding Bootcamp 2022. In this project, I will create a web server using the Express.js framework and add it to a front-end application called Zoo Keeper. The app will be deployed to Heroku.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashlynn4567/Zoo-Keeper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashlynn4567/Zoo-Keeper/issues"
+  },
+  "homepage": "https://github.com/ashlynn4567/Zoo-Keeper#readme"
 }
