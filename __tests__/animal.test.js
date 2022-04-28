@@ -4,10 +4,8 @@ const {
     findById,
     createNewAnimal,
     validateAnimal,
-} = require("../lib/animals");
-const { animals } = require("../data/animals.json");
-
-jest.mock("fs");
+} = require("../lib/animals.js");
+const { animals } = require("../data/animals");
 
 test("creates an animal object", () => {
     const animal = createNewAnimal(
