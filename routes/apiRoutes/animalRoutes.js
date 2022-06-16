@@ -14,7 +14,7 @@ router.get("/animals", (req, res) => {
     if (req.query) {
         results = filterByQuery(req.query, results);
     };
-    res.json(animals);
+    res.json(results);
 });
 
 // add route for animal id json data

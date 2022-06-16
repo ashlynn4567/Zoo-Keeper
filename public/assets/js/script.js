@@ -49,7 +49,7 @@ const handleAnimalFormSubmit = (event) => {
   });
 };
 
-const handleZookeeperFormSubmit = event => {
+const handleZookeeperFormSubmit = (event) => {
   event.preventDefault();
 
   // get zookeeper data and organize it

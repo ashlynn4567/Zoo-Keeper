@@ -31,7 +31,7 @@ const getZookeepers = (formData = {}) => {
   });
   
   fetch(queryUrl)
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         return alert(`Error: ${response.statusText}`);
       }
