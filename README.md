@@ -25,8 +25,8 @@ This is how the site appears to viewers. It is responsive, adapting to multiple 
 
 <p align="center">
 <img alt="An image of the home page, displaying buttons to view animals or to view zookeepers. There are also forms to add a new animal or zookeeper to the existing database." src="./assets/images/zoo-keepr-screenshot.jpg"/>
-<img alt="An image of the 'view animals' page, displaying buttons to return to the catalog or to view zookeepers. There is also a form to filter the anmials by diet or personality trait. In the main portion of the page, the user can view the information about all the current animals in the database." src="./assets/images/zoo-keepr-screenshot.jpg"/>
-<img alt="An image of the 'view zookeepers' page, displaying buttons to view animals or to return to the catalog. In the main portion of the page, the user can view the information about all the current zookeepers in the database." src="./assets/images/zoo-keepr-screenshot.jpg"/>
+<img alt="An image of the 'view animals' page, displaying buttons to return to the catalog or to view zookeepers. There is also a form to filter the anmials by diet or personality trait. In the main portion of the page, the user can view the information about all the current animals in the database." src="./assets/images/zoo-keepr-screenshot-3.jpg"/>
+<img alt="An image of the 'view zookeepers' page, displaying buttons to view animals or to return to the catalog. In the main portion of the page, the user can view the information about all the current zookeepers in the database." src="./assets/images/zoo-keepr-screenshot-2.jpg"/>
 </p>
 
 Users can view the current catalog of animals by pressing the "view animals" button. The page redirects to show cards with all of the current animals information on them, such as name, species, diet, and personality trait. Users can also use the form to the left of the page to filter the results of the animals currently shown. Users can filter by diet or personality trait.
