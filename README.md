@@ -35,10 +35,10 @@ Users can view the current catalog of animals by pressing the "view animals" but
 <img alt="A demonstration gif showing the user navigating to the animals page, where information is displayed for all the existing animals, such as name, species, diet, and personality trait. Users can also use the form to the left to filter by diet or personality trait." src="./assets/images/zoo-keepr-demo.gif"/>
 </p>
 
-Users can also navigate to the current catalog of zookeepers by pressing the "view zookeepers" button. Just like with the animals, the page redirects to show cards with all of the current zookeepers' information, such as name, age, and their favorite animal species. This page does not include a filtering option.
+Users can also navigate to the current catalog of zookeepers by pressing the "view zookeepers" button. Just like with the animals, the page redirects to show cards with all of the current zookeepers' information, such as name, age, and their favorite animal species. Users can also use the form at the bottom to filter by name or age.
 
 <p align="center">
-<img alt="A demonstration gif showing the user navigating to the zookeepers page, where information is displayed for all the existing zookeepers - such as name, age, and favorite animal species. This page does not include a filtering option. " src="./assets/images/zoo-keeper-demo-2.gif"/>
+<img alt="A demonstration gif showing the user navigating to the zookeepers page, where information is displayed for all the existing zookeepers - such as name, age, and favorite animal species. Users can also use the form at the bottom to filter by name or age. " src="./assets/images/zoo-keepr-demo-2.gif"/>
 </p>
 
 On the main Zoo Keepr page, users can add animals or zookeepers to the catalog. The form to the left allows users to enter information for a new animal, ushc as name, species, diet, and personality traits. The form to the right allows users to enter information for a new zookeeper, such as name, age, and favorite animal species. Once the user clicks "add animal" or "add zookeeper", that information is included in the database. If users navigate to the animal or zookeeper page, they will now see a card generated with the new animal or zookeeper's information.
@@ -53,11 +53,14 @@ On the main Zoo Keepr page, users can add animals or zookeepers to the catalog. 
 - CSS
 - JavaScript
 - Node.js
+- Express.js
 
 ## Future Development
 
 In the future, I would like to add the following improvements:
 
+- There is a current known bug that does not allow users to properly add a new animal.
+- I would like to change the layout of the zookeepers page so that the form appears on the left side reliably like the animals page does.
 - A feature that allows users to filter or search the zookeepers.
 - A better database implementation other than a json file.
 
