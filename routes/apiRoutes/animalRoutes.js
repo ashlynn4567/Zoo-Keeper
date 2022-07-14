@@ -1,8 +1,12 @@
 // importing dependencies
-const { router } = require("express").Router();
-const { animals } = require("../../data/animals.json");
-const { filterByQuery, findById, createNewAnimal, validateAnimal } = require("../../lib/animals");
-
+const router = require("express").Router();
+const { animals } = require("../../data/animals");
+const { 
+    filterByQuery, 
+    findById, 
+    createNewAnimal, 
+    validateAnimal 
+} = require("../../lib/animals");
 
 // add route for basic json data
 router.get("/animals", (req, res) => {
@@ -10,7 +14,7 @@ router.get("/animals", (req, res) => {
     if (req.query) {
         results = filterByQuery(req.query, results);
     };
-    res.json(animals);
+    res.json(results);
 });
 
 // add route for animal id json data
