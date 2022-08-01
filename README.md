@@ -13,7 +13,7 @@
 
 ## Description
 
-This is my eighth project for the University of Oregon Coding Bootcamp 2022. In this project, I create a web server using the Express.js framework and add it to a front-end application named Zoo Keepr. This site is hosted on Heroku.
+Zoo Keepr is a full-stack application that adds an Express.js web server to an established front-end application. The app is deployed to Heroku. 
 
 ## Deployed Site
 
